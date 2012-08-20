@@ -1,0 +1,38 @@
+
+<link rel="stylesheet" href="/stylelogin.css">
+
+<div class="bg2">
+	
+
+<div class="loginwrap">
+
+
+
+<div id="formContainer">
+
+<%= form_for(resource, :as => resource_name, :url => session_path(resource_name),:html=>{:method => :post, :id=>"login"}) do |f| %>
+  	<a href="#" id="flipToRecover" class="flipLink">Forgot?</a>
+  <%= f.email_field :email ,options={:id=>"loginEmail"} %>
+
+  <%= f.password_field :password ,options={:id=>"loginPass"} %>
+
+  <%= f.submit "Sign in" %>
+<% end %>
+
+<%= form_for(resource, :as => resource_name, :url => password_path(resource_name), :html => { :method => :post, :id=>"recover" }) do |f| %>
+				<a href="#" id="flipToLogin" class="flipLink">Forgot?</a>
+
+  <%= f.email_field :email ,options={:id=>"recoverEmail"} %>
+
+	<%= f.submit "Reset" %>
+<% end %>
+
+
+
+</div>
+
+
+</div>
+
+</div>
+

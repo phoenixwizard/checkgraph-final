@@ -1,0 +1,45 @@
+div.list {
+	padding-left: 60px;
+	position: relative;
+}
+#background-canvas {
+	width: 100%;
+	margin: 0 0 0 100px;
+	padding: 90px 100px;
+}
+#foreground-data {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 30px 0px 0px 160px;
+}
+input[type=submit].ButtonSelected {
+	color: red;
+}
+div.open-task {
+}
+
+div.done-task {
+}
+
+
+.actions {
+  text-align: right;
+}
+
+div.FloatingPlus {
+	width: 20px;
+	height: 30px;
+	font-size: 31px;
+	padding: 0px 3px 2px;
+	background: white;
+	color: #999;
+	box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1);
+	display: inline;
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 40px 0px 0px 50px;
+	float: left;
+	cursor: pointer;
+}
